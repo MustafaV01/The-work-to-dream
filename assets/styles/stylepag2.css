@@ -1,0 +1,206 @@
+
+body{
+	background-color: #3C8DAD;
+	font-family: Georgia;
+}
+.div1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.forms{
+	width: 300px;
+	background-color: #F5A962;
+	padding: 26px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+h1{
+	color: #DDDDDD;
+	display: flex;
+	justify-content: center;
+}
+
+.fforms{
+	display: flex;
+	justify-content: center;
+	color: black;
+	font-size: 29px;
+	margin-top: 0px;
+}
+
+.forms2{
+	height: 533px;
+	padding: 48px;
+}
+
+.button11{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	align-items:center;
+	background-color: aquamarine;
+	height: 56px;
+	border-radius: 10px;
+	/* top: 18px; */
+}
+
+
+
+
+/*/////////////////Robot////////////////*/
+.boxrobot{
+	
+}
+
+.robots {
+	display: flex;
+    flex-direction: column;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #5f93e8;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	
+}
+
+.head:hover {
+	width: 209px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	margin: 0 auto;
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.left_arm:hover { 
+	background-color: rebeccapurple;
+	margin-right: 10px; 
+	transform:rotate(45deg);
+	transition: 1s ease-in-out;
+	
+} 
+
+.right_arm { 
+	margin-left: 10px; 
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+	display: flex;
+	flex-direction:row ;
+	width: 200px; 
+	height: 200px;
+	margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover +.right_leg ,.left_leg:hover {
+	transition: 0.2s ease-in-out;
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+
+
+.right_leg { 
+	margin-left: 30px; 
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	position: relative; 
+	top: 89px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 70px; 
+	left: 120px; 
+}
+
+.dans1{
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	height: 21px;
+	width: 57px;
+	border-radius: 10px;
+	/* left: 11px; */
+	background-color: rosybrown;
+	color: red;
+	text-size-adjust: 25px;
+}
+
+.dans1:hover {
+		transition: 1s ease-in-out;
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+
+}
+.dance{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.dans1:hover

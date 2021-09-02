@@ -1,0 +1,32 @@
+.text{
+    color: red;
+}
+
+.text2{
+    color: royalblue;
+}
+p{
+    margin-bottom: 0rem !important;
+}
+.loginbutton{
+    margin-right: 10px;
+margin-left: 10px;
+}
+.vertical{
+    line-height:1 !important;
+    vertical-align:0px !important;
+}
+
+.background1{
+    font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, red , yellow); /* Standard syntax */
+
+}
+#p3{
+    text-size:10px ;
+}

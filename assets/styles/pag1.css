@@ -1,0 +1,33 @@
+
+body{
+	background-color: #3C8DAD;
+	font-family: Georgia;
+}
+.div1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.forms{
+	width: 300px;
+	background-color: #F5A962;
+	padding: 26px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+h1{
+	color: #DDDDDD;
+	display: flex;
+	justify-content: center;
+}
+
+.fforms{
+	display: flex;
+	justify-content: center;
+	color: black;
+	font-size: 29px;
+	margin-top: 0px;
+}

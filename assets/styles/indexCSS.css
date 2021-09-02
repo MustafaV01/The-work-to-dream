@@ -1,0 +1,146 @@
+.menu{
+	background-color: #F5A962;
+}
+.back{
+	background:#3C8DAD ;
+	background-repeat: no-repeat;
+	background-size:cover ;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    /*padding-top: 200px;*/
+    margin: auto;
+
+}
+
+img{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: 29px;
+	left: 90px;
+	cursor:pointer;
+}
+.box{
+	background-color: #DDDDDD;
+	margin: auto;
+	border-radius: 28px;
+	/* visibility: hidden; */
+	opacity: 0;
+}
+.box1{
+	background-color: #DDDDDD;
+	margin: auto;
+	border-radius: 28px;
+	/* visibility: hidden; */
+	opacity: 0;
+}
+
+.box.active{
+	/* visibility: visible; */
+	opacity:1;
+	transition: 0.5s;
+	transform: translateY(4%);
+}
+.box1.active{
+	/* visibility: visible; */
+	opacity:1;
+	transition: 0.5s;
+	transform: translateY(4%);
+}
+
+h1{
+	padding-top: 30px;
+	text-align: center;
+
+}
+h3{
+	padding-top: 10px;
+	text-align: center;
+	margin: 19px;
+}
+
+.centeris{
+	justify-content: center;
+}
+
+.link{
+	left: 0px;
+	color: #F5A962;
+	/*border: 1px solid;*/
+	padding: 7px;
+	/*border-radius: 17px;*/
+	margin: 10px;
+}
+.form{
+display: flex;
+/*flex-direction: row;*/
+flex-direction:row-reverse;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.txt{
+	color: #125D98;
+	/*font-family: 'Roboto Condensed', sans-serif;*/
+	font-family: Georgia;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  top: 62px;
+  right: -94px;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+ visibility: visible;
+  position: absolute;
+  transform: translateX(50%) translateY(50%);
+  /*left: -130px;
+  top: 60px; */
+  background-color:#4CAF50;
+  margin: 60px;
+  padding:40px; 
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+	background-color: #F5A962;
+	transition: 1s;
+	transform: translateX(5%) translateY(5%);
+}
+a{
+	color: #F5A962;
+	font-size: 200% ;
+	font-family: Georgia;
+	text-decoration: none;
+}
+.txt2{
+	color: #F5A962;
+	font-size: 20px;
+}
+.portofoliu{
+	display: flex;
+	height: 300px;
+	width: 500px;
+}
+.margin{margin: 10px;}

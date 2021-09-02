@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="../assets/styles/indexCSS.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+  <title>De la 1 la 100</title>
+</head>
+
+<body class="back">
+  <div class="menuu"></div>
+  <div class="action">
+    <div class="profile" onclick="menuToggle();menuToggle1()">
+      <img src="../assets/img/4572.jpg" />
+    </div>
+    <div class="portofoliu">
+      <div class="margin">
+        <div class="box">
+          <h1 class="txt">
+            Hi my name is<br />
+            Burghelea Dragos
+          </h1>
+          <h3 class="txt">
+            This page shows my journey through the course on the udemi
+            platform "the complete web developer zero to mastery"
+          </h3>
+          <form class="form">
+            <div class="tooltip link centeris">
+              <a href="pag/indexpag/pag1.html">1</a>
+              <span class="tooltiptext">The basics of HTML</span>
+            </div>
+            <div class="tooltip link centeris">
+              <a href="pag/indexpag/pag2.html">2</a>
+              <span class="tooltiptext">The basics of CSS</span>
+            </div>
+            <div class="tooltip link centeris">
+              <a href="pag/indexpag/pag3.html">3</a>
+              <span class="tooltiptext"> CSS</span>
+            </div>
+            <div class="tooltip link centeris">
+              <a href="pag/indexpag/pag4.html">4</a>
+              <span class="tooltiptext">Bootstrap</span>
+            </div>
+            <div class="tooltip link centeris">
+              <a href="pag/indexpag/pag5.html">5</a>
+              <span class="tooltiptext">Email</span>
+            </div>
+            <div class="tooltip link centeris">
+              <a href="pag/indexpag/pag6.html">6</a>
+
+              <span class="tooltiptext">Animation</span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="margin">
+        <div class="box1">
+          <h3 class="txt">
+            This is the page to show the challenges in
+            <a class="txt2" href="https://www.frontendmentor.io/solutions">Frontend Mentor</a>
+          </h3>
+
+          <form class="form">
+            <div class="tooltip link centeris">
+              <a href="pag/frontendmentor.html">1</a>
+              <span class="tooltiptext">My first challenge(it is not finished)</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function menuToggle() {
+      const menuToggle = document.querySelector(".box");
+      menuToggle.classList.toggle("active");
+    }
+    function menuToggle1() {
+      const menuToggle = document.querySelector(".box1");
+      menuToggle.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
