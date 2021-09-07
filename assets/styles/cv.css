@@ -5,7 +5,7 @@
 
 /* Custom proprietis */
 :root{
-    /* le pun in neste "variabile" pentru a le accesa mai repede */
+    /* le pun in "variabile" pentru a le accesa mai repede */
     --ff-primary:  'Source Sans Pro', sans-serif ;
     --ff-secondary: 'Source Code Pro', monospace ;
 
@@ -15,15 +15,21 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
+    --clr-lit-dark: #818181;
     --clr-accent: #16e0bd;
 
-    --fs-h1: 3rem;
+    --fs-h1: 4rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    /* box size; */
+    --bs:0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    /* umbre */
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -82,12 +88,17 @@ h3{font-size: var(--fs-h3);}
     font-size: var(--fs-h3);
 }
 .section_subtitle-intro,
-.section_subtitle-about {
+.section_subtitle-abaout {
     background: var(--clr-accent);
+    padding:.25em 1em ;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
 
+/* header  */
+nav{
+    display: none;
+}
 
 /* Intro section */
 
@@ -95,18 +106,139 @@ h3{font-size: var(--fs-h3);}
     position:relative ;
 }
 
-@media(min-width:600px){
+.intro_img{
+    box-shadow: var(--bs);
+}
+
+.section_subtitle-intro{
+    display: inline-block;
+}
+
+@media(min-width:800px){
     .intro{
         display: grid;
+        width: min-content;
+        margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
             "img title" 
             "img subtitle" ;
-grid-template-columns: min-content max-content ;
+        grid-template-columns: min-content max-content ;
     }
     .intro_img{
         grid-area: img;
         min-width: 250px;
+        position: relative;
+        z-index: 2;
 
     }
+
+    .section_subtitle-intro{
+        /* incerc sa pun linia de subtitlu in spatele pozei */
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        /* absolut position  */
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+}
+
+
+
+/* Skills  */
+.skills{
+    background-color: var(--clr-lit-dark);
+    background-image: url(../img/cv/skills-background.jpg);
+    background-size: cover;
+    /* pentru a nu repeta */
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section_title-skills{
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section_title-skills::after{
+    /* create line  */
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light) ;
+    opacity: 0.5;
+}
+
+.skill-item{
+    /* max-width: 800px; */
+    margin: 0;
+
+}
+
+
+@media (min-width: 1000px){
+    .skille_list{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .skill-item + .skill-item {
+        margin-left: 2em;
+    }
+   
+}
+
+.abaut_me{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about_me-img{
+    box-shadow: var(--bs);
+}
+
+@media(min-width: 800px){
+    .abaut_me{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+            grid-column-gap: 2em;
+    }
+
+    .section_title-abaout{
+        grid-area: title;
+
+    }
+
+    .section_subtitle-abaout{
+        grid-column: 1/-1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(100px + 7em);
+    }
+    
+    .about_me-img{
+       grid-area: img;
+
+    }
+
+    .about_me-img{
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+
 }
