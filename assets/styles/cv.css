@@ -242,3 +242,56 @@ nav{
     }
 
 }
+
+
+ /* My work  */
+
+.my_work{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section_subtitle-work{
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom:  2em;
+}
+
+.portofolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(365px,1fr));
+    align-items: center;
+    justify-items: center;
+}
+
+.portofolio_item{
+    background: var(--clr-accent);
+    overflow: hidden;
+
+}
+
+.portofolio_img{
+    transition: transform 750ms cubic-bezier(.5,0,.5,1),
+    opacity 150ms linear;
+    
+}
+
+.portofolio_img:hover{
+    transform: scale(1.1);
+    opacity: .5;
+}
+
+/* footer */
+
+.footer{
+    background: black;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.footer a{
+    color: inherit;
+}
+
