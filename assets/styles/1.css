@@ -1,0 +1,13 @@
+::file-selector-button {
+    font: inherit;
+  };
+
+.collapsing.collapse-horizontal {
+    width: 0;
+    height: auto;
+    transition: width 0.35s ease;
+  }
+
+  .bg-primary {
+    background-color: #2a4e6e !important;
+}
