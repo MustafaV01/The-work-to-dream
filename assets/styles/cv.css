@@ -40,8 +40,38 @@ body{
     box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
 
 }
+
+
+/* //left */
+
+img{
+    display: block;
+    max-width: 200px;
+    border-radius: 100%;
+  
+}
+.center_info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.invisible1{
+    background-color:transparent;
+    box-shadow:none
+}
+
+@media (max-width:1300px){
+     .invisible1{
+        background-color:var(--clr-pure) ;
+        box-shadow:10px 10px 30px rgba(0,0,0,0.1);
+    } 
+}
+
 @media(min-width:1300px){
     .pag{
         grid-template-columns: repeat(3, 1fr); 
     }
+    
 }
